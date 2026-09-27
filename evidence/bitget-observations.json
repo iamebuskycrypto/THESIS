@@ -1,0 +1,194 @@
+{
+  "notice": "READ-ONLY MARKET OBSERVATIONS; NOT PAPER TRADING OR PERFORMANCE EVIDENCE",
+  "rows": [
+    {
+      "url": "https://api.bitget.com/api/v3/market/instruments?category=SPOT&symbol=RAAPLUSDT",
+      "observed_at": 1789581977.7669892,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789581977672,
+        "data": [
+          {
+            "symbol": "RAAPLUSDT",
+            "category": "SPOT",
+            "baseCoin": "rAAPL",
+            "quoteCoin": "USDT",
+            "symbolType": "stock",
+            "buyLimitPriceRatio": "0.1",
+            "sellLimitPriceRatio": "0.1",
+            "minOrderQty": "0.0001",
+            "maxOrderQty": "0",
+            "pricePrecision": "2",
+            "quantityPrecision": "4",
+            "quotePrecision": "6",
+            "minOrderAmount": "10",
+            "maxMarketOrderAmount": "1000000",
+            "maxSymbolOrderNum": "",
+            "maxProductOrderNum": "400",
+            "status": "online",
+            "maintainTime": "",
+            "areaSymbol": "yes",
+            "maxPositionNum": "200",
+            "isReality": "yes",
+            "launchTime": "1780322400000"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RAAPLUSDT",
+      "observed_at": 1789581985.0864377,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789581984980,
+        "data": [
+          {
+            "category": "SPOT",
+            "symbol": "RAAPLUSDT",
+            "ts": "1789581983442",
+            "lastPrice": "334.05",
+            "openPrice24h": "330.55",
+            "highPrice24h": "334.13",
+            "lowPrice24h": "332.29",
+            "ask1Price": "334.01",
+            "bid1Price": "333.99",
+            "bid1Size": "63",
+            "ask1Size": "85",
+            "price24hPcnt": "0.01059",
+            "volume24h": "5223566.9731",
+            "turnover24h": "1739149150.4622",
+            "platformTurnover24h": "117934.4475"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bitget.com/api/v3/market/instruments?category=SPOT&symbol=RNVDAUSDT",
+      "observed_at": 1789581991.9063046,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789581991793,
+        "data": [
+          {
+            "symbol": "RNVDAUSDT",
+            "category": "SPOT",
+            "baseCoin": "rNVDA",
+            "quoteCoin": "USDT",
+            "symbolType": "stock",
+            "buyLimitPriceRatio": "0.1",
+            "sellLimitPriceRatio": "0.1",
+            "minOrderQty": "0.0001",
+            "maxOrderQty": "0",
+            "pricePrecision": "2",
+            "quantityPrecision": "4",
+            "quotePrecision": "6",
+            "minOrderAmount": "10",
+            "maxMarketOrderAmount": "1000000",
+            "maxSymbolOrderNum": "",
+            "maxProductOrderNum": "400",
+            "status": "online",
+            "maintainTime": "",
+            "areaSymbol": "yes",
+            "maxPositionNum": "200",
+            "isReality": "yes",
+            "launchTime": "1776914552903"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RNVDAUSDT",
+      "observed_at": 1789581999.4954941,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789581999403,
+        "data": [
+          {
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "ts": "1789581998546",
+            "lastPrice": "216.27",
+            "openPrice24h": "211.99",
+            "highPrice24h": "216.39",
+            "lowPrice24h": "214.72",
+            "ask1Price": "216.3",
+            "bid1Price": "216.27",
+            "bid1Size": "212",
+            "ask1Size": "290",
+            "price24hPcnt": "0.02019",
+            "volume24h": "15307150.4564",
+            "turnover24h": "3300019810.2554",
+            "platformTurnover24h": "897129.0935"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bitget.com/api/v3/market/instruments?category=SPOT&symbol=RMSFTUSDT",
+      "observed_at": 1789582006.6780827,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789582006577,
+        "data": [
+          {
+            "symbol": "RMSFTUSDT",
+            "category": "SPOT",
+            "baseCoin": "rMSFT",
+            "quoteCoin": "USDT",
+            "symbolType": "stock",
+            "buyLimitPriceRatio": "0.1",
+            "sellLimitPriceRatio": "0.1",
+            "minOrderQty": "0.0001",
+            "maxOrderQty": "0",
+            "pricePrecision": "2",
+            "quantityPrecision": "4",
+            "quotePrecision": "6",
+            "minOrderAmount": "10",
+            "maxMarketOrderAmount": "1000000",
+            "maxSymbolOrderNum": "",
+            "maxProductOrderNum": "400",
+            "status": "online",
+            "maintainTime": "",
+            "areaSymbol": "yes",
+            "maxPositionNum": "200",
+            "isReality": "yes",
+            "launchTime": "1780322400000"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RMSFTUSDT",
+      "observed_at": 1789582013.6295278,
+      "response": {
+        "code": "00000",
+        "msg": "success",
+        "requestTime": 1789582013533,
+        "data": [
+          {
+            "category": "SPOT",
+            "symbol": "RMSFTUSDT",
+            "ts": "1789582012439",
+            "lastPrice": "493.73",
+            "openPrice24h": "497.95",
+            "highPrice24h": "494.37",
+            "lowPrice24h": "492.78",
+            "ask1Price": "493.8",
+            "bid1Price": "493.62",
+            "bid1Size": "65",
+            "ask1Size": "1",
+            "price24hPcnt": "-0.00847",
+            "volume24h": "1944158.6125",
+            "turnover24h": "959726446.7811",
+            "platformTurnover24h": "58564.0702"
+          }
+        ]
+      }
+    }
+  ]
+}

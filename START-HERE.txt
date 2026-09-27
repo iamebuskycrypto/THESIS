@@ -1,0 +1,2 @@
+Read README.md, then run python3 launch.py from this folder.
+No API key is included. Research and paper simulation are separate.

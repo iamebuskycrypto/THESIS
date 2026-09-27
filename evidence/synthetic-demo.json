@@ -1,0 +1,433 @@
+{
+  "notice": "SYNTHETIC ENGINE TEST ONLY; NO AI OR PERFORMANCE CLAIMS",
+  "rows": [
+    {
+      "after": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "before": {
+        "cash": 10000.0,
+        "last_bid": 0.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 0.0,
+        "symbol": "DEMO_STOCK"
+      },
+      "decision": {
+        "action": "buy",
+        "expected_remaining_move_bps": 150.0,
+        "invalidation": "Synthetic outlook is withdrawn.",
+        "priced_in_assessment": "Synthetic assumed price reaction for exercising the cost gate.",
+        "source_ids": [
+          "synthetic-source"
+        ],
+        "target_weight": 0.05,
+        "thesis": "Scripted mechanical test, not AI reasoning."
+      },
+      "decision_time": 1000.0,
+      "event_id": "synthetic-buy",
+      "evidence_mode": "synthetic",
+      "fill": {
+        "fee": 0.49999912462499996,
+        "notional": 499.9991246249999,
+        "price": 100.15005,
+        "quantity": 4.9925,
+        "side": "buy",
+        "slippage_bps_assumption": 5.0
+      },
+      "marked_equity": 9998.750876250375,
+      "packet": {
+        "event_id": "synthetic-buy",
+        "evidence": [
+          {
+            "id": "synthetic-source",
+            "observed_at": 980.0,
+            "published_at": 970.0,
+            "source_kind": "issuer",
+            "text": "SYNTHETIC ENGINE TEST: issuer raises its revenue outlook.",
+            "url": "https://example.invalid/synthetic"
+          }
+        ],
+        "evidence_mode": "synthetic",
+        "instrument": {
+          "is_reality": true,
+          "min_notional": 10.0,
+          "quantity_precision": 4,
+          "status": "online",
+          "symbol": "DEMO_STOCK"
+        },
+        "price_before_event": 99.0,
+        "quote": {
+          "ask": 100.1,
+          "ask_size": 1000.0,
+          "bid": 100.0,
+          "bid_size": 1000.0,
+          "timestamp": 1000.0
+        },
+        "session_tradable": true,
+        "symbol": "DEMO_STOCK"
+      },
+      "policy": {
+        "edge_buffer_bps": 20.0,
+        "fee_bps": 10.0,
+        "initial_cash": 10000.0,
+        "max_drawdown": 0.02,
+        "max_event_age_seconds": 3600.0,
+        "max_position_weight": 0.1,
+        "max_quote_age_seconds": 15.0,
+        "max_spread_bps": 30.0,
+        "max_top_level_participation": 0.1,
+        "slippage_bps": 5.0
+      },
+      "previous_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "reason": "Local simulated fill; no exchange order",
+      "recorded_at": 1789581987.0018013,
+      "status": "paper_filled",
+      "digest": "a3a0633249bee73f7645d2306632eb27508a4af56f808991923fbcd1e1e94e97"
+    },
+    {
+      "after": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "before": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "decision": null,
+      "decision_time": 1000.0,
+      "event_id": "synthetic-stale",
+      "evidence_mode": "synthetic",
+      "fill": null,
+      "marked_equity": 9998.750876250375,
+      "packet": {
+        "event_id": "synthetic-stale",
+        "evidence": [
+          {
+            "id": "synthetic-source",
+            "observed_at": 980.0,
+            "published_at": 970.0,
+            "source_kind": "issuer",
+            "text": "SYNTHETIC ENGINE TEST: issuer raises its revenue outlook.",
+            "url": "https://example.invalid/synthetic"
+          }
+        ],
+        "evidence_mode": "synthetic",
+        "instrument": {
+          "is_reality": true,
+          "min_notional": 10.0,
+          "quantity_precision": 4,
+          "status": "online",
+          "symbol": "DEMO_STOCK"
+        },
+        "price_before_event": 99.0,
+        "quote": {
+          "ask": 100.1,
+          "ask_size": 1000.0,
+          "bid": 100.0,
+          "bid_size": 1000.0,
+          "timestamp": 900.0
+        },
+        "session_tradable": true,
+        "symbol": "DEMO_STOCK"
+      },
+      "policy": {
+        "edge_buffer_bps": 20.0,
+        "fee_bps": 10.0,
+        "initial_cash": 10000.0,
+        "max_drawdown": 0.02,
+        "max_event_age_seconds": 3600.0,
+        "max_position_weight": 0.1,
+        "max_quote_age_seconds": 15.0,
+        "max_spread_bps": 30.0,
+        "max_top_level_participation": 0.1,
+        "slippage_bps": 5.0
+      },
+      "previous_digest": "a3a0633249bee73f7645d2306632eb27508a4af56f808991923fbcd1e1e94e97",
+      "reason": "Stale or future quote",
+      "recorded_at": 1789581987.0030174,
+      "status": "blocked",
+      "digest": "0b8c1799c12a9660922b7a1c4ebec10ac62194f76b3762cb3306b18a759323a0"
+    },
+    {
+      "after": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "before": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "decision": {
+        "action": "buy",
+        "expected_remaining_move_bps": 150.0,
+        "invalidation": "Synthetic outlook is withdrawn.",
+        "priced_in_assessment": "Synthetic assumed price reaction for exercising the cost gate.",
+        "source_ids": [
+          "synthetic-source"
+        ],
+        "target_weight": 0.05,
+        "thesis": "Scripted mechanical test, not AI reasoning."
+      },
+      "decision_time": 1000.0,
+      "event_id": "synthetic-wide-spread",
+      "evidence_mode": "synthetic",
+      "fill": null,
+      "marked_equity": 9998.750876250375,
+      "packet": {
+        "event_id": "synthetic-wide-spread",
+        "evidence": [
+          {
+            "id": "synthetic-source",
+            "observed_at": 980.0,
+            "published_at": 970.0,
+            "source_kind": "issuer",
+            "text": "SYNTHETIC ENGINE TEST: issuer raises its revenue outlook.",
+            "url": "https://example.invalid/synthetic"
+          }
+        ],
+        "evidence_mode": "synthetic",
+        "instrument": {
+          "is_reality": true,
+          "min_notional": 10.0,
+          "quantity_precision": 4,
+          "status": "online",
+          "symbol": "DEMO_STOCK"
+        },
+        "price_before_event": 99.0,
+        "quote": {
+          "ask": 105.0,
+          "ask_size": 1000.0,
+          "bid": 100.0,
+          "bid_size": 1000.0,
+          "timestamp": 1000.0
+        },
+        "session_tradable": true,
+        "symbol": "DEMO_STOCK"
+      },
+      "policy": {
+        "edge_buffer_bps": 20.0,
+        "fee_bps": 10.0,
+        "initial_cash": 10000.0,
+        "max_drawdown": 0.02,
+        "max_event_age_seconds": 3600.0,
+        "max_position_weight": 0.1,
+        "max_quote_age_seconds": 15.0,
+        "max_spread_bps": 30.0,
+        "max_top_level_participation": 0.1,
+        "slippage_bps": 5.0
+      },
+      "previous_digest": "0b8c1799c12a9660922b7a1c4ebec10ac62194f76b3762cb3306b18a759323a0",
+      "reason": "Spread exceeds entry limit",
+      "recorded_at": 1789581987.0034397,
+      "status": "blocked",
+      "digest": "8797ae9abb570d85fe0dea4ef00342f527f291fc94c1c4e5fbbb7a7394689d14"
+    },
+    {
+      "after": {
+        "cash": 9998.002250875374,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 0.0,
+        "symbol": "DEMO_STOCK"
+      },
+      "before": {
+        "cash": 9499.500876250375,
+        "last_bid": 100.0,
+        "mode": "synthetic",
+        "peak_equity": 10000.0,
+        "policy": {
+          "edge_buffer_bps": 20.0,
+          "fee_bps": 10.0,
+          "initial_cash": 10000.0,
+          "max_drawdown": 0.02,
+          "max_event_age_seconds": 3600.0,
+          "max_position_weight": 0.1,
+          "max_quote_age_seconds": 15.0,
+          "max_spread_bps": 30.0,
+          "max_top_level_participation": 0.1,
+          "slippage_bps": 5.0
+        },
+        "quantity": 4.9925,
+        "symbol": "DEMO_STOCK"
+      },
+      "decision": {
+        "action": "sell",
+        "expected_remaining_move_bps": 150.0,
+        "invalidation": "Synthetic outlook is withdrawn.",
+        "priced_in_assessment": "Synthetic assumed price reaction for exercising the cost gate.",
+        "source_ids": [
+          "synthetic-source"
+        ],
+        "target_weight": 0.0,
+        "thesis": "Scripted mechanical test, not AI reasoning."
+      },
+      "decision_time": 1000.0,
+      "event_id": "synthetic-exit",
+      "evidence_mode": "synthetic",
+      "fill": {
+        "fee": 0.499000375,
+        "notional": 499.00037499999996,
+        "price": 99.95,
+        "quantity": 4.9925,
+        "side": "sell",
+        "slippage_bps_assumption": 5.0
+      },
+      "marked_equity": 9998.002250875374,
+      "packet": {
+        "event_id": "synthetic-exit",
+        "evidence": [
+          {
+            "id": "synthetic-source",
+            "observed_at": 980.0,
+            "published_at": 970.0,
+            "source_kind": "issuer",
+            "text": "SYNTHETIC ENGINE TEST: issuer raises its revenue outlook.",
+            "url": "https://example.invalid/synthetic"
+          }
+        ],
+        "evidence_mode": "synthetic",
+        "instrument": {
+          "is_reality": true,
+          "min_notional": 10.0,
+          "quantity_precision": 4,
+          "status": "online",
+          "symbol": "DEMO_STOCK"
+        },
+        "price_before_event": 99.0,
+        "quote": {
+          "ask": 100.1,
+          "ask_size": 1000.0,
+          "bid": 100.0,
+          "bid_size": 1000.0,
+          "timestamp": 1000.0
+        },
+        "session_tradable": true,
+        "symbol": "DEMO_STOCK"
+      },
+      "policy": {
+        "edge_buffer_bps": 20.0,
+        "fee_bps": 10.0,
+        "initial_cash": 10000.0,
+        "max_drawdown": 0.02,
+        "max_event_age_seconds": 3600.0,
+        "max_position_weight": 0.1,
+        "max_quote_age_seconds": 15.0,
+        "max_spread_bps": 30.0,
+        "max_top_level_participation": 0.1,
+        "slippage_bps": 5.0
+      },
+      "previous_digest": "8797ae9abb570d85fe0dea4ef00342f527f291fc94c1c4e5fbbb7a7394689d14",
+      "reason": "Local simulated fill; no exchange order",
+      "recorded_at": 1789581987.0037792,
+      "status": "paper_filled",
+      "digest": "6769cc93d353c450d9d64a2f84ef7d34a8b2ca01d369388fbccd72996a425ed5"
+    }
+  ]
+}

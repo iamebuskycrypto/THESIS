@@ -1,0 +1,55 @@
+{
+  "_fixture_note": "Projection of the real review pasted by the user on 2026-09-19. Preserved fields below are from that record; omitted fields are not reconstructed. No new model response is claimed.",
+  "id": "22699db91d0a40c394cde666c690d50d",
+  "status": "complete",
+  "mode": "research_only",
+  "model": "qwen3:8b",
+  "started_at": 1789825103.4055738,
+  "completed_at": 1789825125.0289521,
+  "model_seconds": 16.78,
+  "event": {
+    "evidence_scope": "issuer RSS/Atom excerpt",
+    "id": "7d1c2c4459967c947ca12042",
+    "observed_at": 1789748135.987603,
+    "published_at": 1789567168.902,
+    "source_kind": "issuer",
+    "symbol": "RAAPLUSDT",
+    "text": "Celebrating “What Holds Us” on iPhone 18 Pro. A new photography exhibition, curated by Kathy Ryan, celebrates the evolving language of visual storytelling and showcases the advanced pro camera system on iPhone 18 Pro.",
+    "title": "Celebrating “What Holds Us” on iPhone 18 Pro",
+    "url": "https://www.apple.com/newsroom/2026/09/celebrating-what-holds-us-on-iphone-18-pro/"
+  },
+  "assessment": {
+    "counterargument": {"source_ids": ["price_change"], "text": "The price change does not establish causation or how much news is already priced in."},
+    "invalidation": "A clear correlation between the announcement and the price change would change this assessment.",
+    "missing_information": ["Full article text", "Analyst consensus", "Independent expectations data", "Token weekend precedence verification"],
+    "priced_in_assessment": {"source_ids": ["limits"], "text": "The measured price change spans publication to this review; other events may explain it."},
+    "supporting_evidence": [{"source_ids": ["reference", "price_change"], "text": "The pre-announcement candle closed at 332.64, and the midpoint price change since then was 63.28 bps."}],
+    "thesis": {"source_ids": ["issuer"], "text": "The iPhone 18 Pro announcement may not have a clear pricing impact yet."},
+    "verdict": "no_clear_edge"
+  },
+  "context": {
+    "captured_at": 1789825108.249919,
+    "event_age_seconds": 257939.34791898727,
+    "price_change_bps": 63.28162578162599,
+    "spread_bps": 14.04053832021471,
+    "quote": {"ask": 334.98, "ask_size": 0.4209, "bid": 334.51, "bid_size": 0.4806, "collected_at": 1789825108.24984, "timestamp": 1789825106.249},
+    "reference": {"bar_close_at": 1789567080.0, "bar_open_at": 1789567020.0, "description": "Last retrieved fully closed 1-minute candle before publication; not proof of event causation", "price": 332.64},
+    "session": {"available": true, "reason": "Calendar closure; token weekend precedence is not yet verified", "tradable": false},
+    "checks": [
+      {"detail": "71.6 hours old; entry limit 1 hour(s)", "label": "Announcement within entry window", "passed": false},
+      {"detail": "2.0 seconds old at capture", "label": "Recent quote", "passed": true},
+      {"detail": "Calendar closure; token weekend precedence is not yet verified", "label": "Trading session", "passed": false},
+      {"detail": "14.04 bps; limit 30 bps", "label": "Spread within limit", "passed": true},
+      {"detail": "Closed candle before publication", "label": "Pre-announcement reference", "passed": true},
+      {"detail": "Top-of-book sizes only; no proposed position was checked", "label": "Displayed bid and ask size", "passed": true}
+    ],
+    "evidence": [
+      {"id": "issuer", "kind": "observed", "observed_at": 1789748135.987603, "published_at": 1789567168.902, "text": "Celebrating “What Holds Us” on iPhone 18 Pro. A new photography exhibition, curated by Kathy Ryan, celebrates the evolving language of visual storytelling and showcases the advanced pro camera system on iPhone 18 Pro.", "title": "Official issuer excerpt", "url": "https://www.apple.com/newsroom/2026/09/celebrating-what-holds-us-on-iphone-18-pro/"},
+      {"id": "quote", "kind": "observed", "text": "{\"ask\":334.98,\"ask_size\":0.4209,\"bid\":334.51,\"bid_size\":0.4806,\"collected_at\":1789825108.24984,\"timestamp\":1789825106.249}", "title": "Bitget quote snapshot", "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RAAPLUSDT"},
+      {"id": "reference", "kind": "observed", "text": "{\"bar_close_at\":1789567080.0,\"bar_open_at\":1789567020.0,\"description\":\"Last retrieved fully closed 1-minute candle before publication; not proof of event causation\",\"price\":332.64}", "title": "Pre-announcement candle"},
+      {"id": "price_change", "kind": "computed", "text": "Midpoint change since the pre-announcement candle: 63.28 bps. This does not establish causation or how much news is already priced in.", "title": "Observed price change"},
+      {"id": "entry_context", "kind": "computed", "text": "[{\"detail\":\"71.6 hours old; entry limit 1 hour(s)\",\"label\":\"Announcement within entry window\",\"passed\":false},{\"detail\":\"2.0 seconds old at capture\",\"label\":\"Recent quote\",\"passed\":true},{\"detail\":\"Calendar closure; token weekend precedence is not yet verified\",\"label\":\"Trading session\",\"passed\":false},{\"detail\":\"14.04 bps; limit 30 bps\",\"label\":\"Spread within limit\",\"passed\":true},{\"detail\":\"Closed candle before publication\",\"label\":\"Pre-announcement reference\",\"passed\":true},{\"detail\":\"Top-of-book sizes only; no proposed position was checked\",\"label\":\"Displayed bid and ask size\",\"passed\":true}]", "title": "Entry context at capture"},
+      {"id": "limits", "kind": "limitations", "text": "Only an issuer RSS/Atom excerpt was collected; the full article was not retrieved. No analyst consensus or independent expectations data was supplied. This is a review at the time shown, not a historical trade or a forecast made at publication. The announcement is outside the paper engine's one-hour entry window. The measured price change spans publication to this review; other events may explain it.", "title": "Known limitations"}
+    ]
+  }
+}

@@ -1,0 +1,999 @@
+{
+  "id": "ea32f772d6b1430db689346ca71a1a6c",
+  "status": "complete",
+  "event": {
+    "evidence_scope": "issuer RSS/Atom excerpt",
+    "feed_sha256": "4f1b704e980996a33177e879dd0fe3a730d698365ac162acac746db1a3edfd9e",
+    "id": "fa1baabfbc5362e98a953f28",
+    "observed_at": 1789748168.487936,
+    "published_at": 1788179400.0,
+    "source_kind": "issuer",
+    "symbol": "RNVDAUSDT",
+    "text": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms. NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+    "text_sha256": "4a2868514be426a4f1f5741ff85a5f310e4ee5fd049eba6d5a24fa140bfa245e",
+    "title": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+  },
+  "context": {
+    "article": {
+      "attempted_at": 1789831413.507027,
+      "characters": 6327,
+      "coverage": "partial",
+      "extraction_method": "issuer-selectors-1",
+      "final_url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms",
+      "html_sha256": "379d15b8912afc6e50c553c9f46965db942357e4a58580b71a557620d89f3d1e",
+      "paragraphs": [
+        "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "As part of the expanded collaboration, MediaTek will adopt the NVIDIA NVLink Fusion™ platform to provide hyperscalers, cloud service providers and frontier model developers with a prevalidated path to develop custom XPUs and bring them into NVIDIA NVLink™-connected, rack-scale AI factories.",
+        "The companies combine NVIDIA’s accelerated computing, AI, graphics and software platforms with MediaTek’s leadership in custom silicon, high-performance computing, power-efficient system-on-chip (SoC) design, advanced packaging, interconnects and connectivity.",
+        "NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.",
+        "NVIDIA and MediaTek are collaborating in three major areas:",
+        "AI infrastructure: MediaTek will work with NVIDIA’s NVLink Fusion ecosystem to enable customers to develop custom AI infrastructure designed to integrate with NVIDIA rack-scale systems and AI factories.",
+        "Local AI computing: The companies will continue to collaborate on multiple generations of NVIDIA RTX Spark™ and DGX Spark™ PC chips, powering consumer PCs, AI developer supercomputers and enterprise-class workstations, that integrate NVIDIA GPUs with MediaTek SoCs.",
+        "Automotive: MediaTek and NVIDIA will continue developing platforms for AI-powered, software-defined vehicles in the era of physical AI.",
+        "“AI is transforming every computing platform — from the world’s largest AI factories to the PC and the car,” said Jensen Huang, founder and CEO of NVIDIA. “MediaTek is one of the world’s great semiconductor companies, with exceptional expertise in system-on-chip design, connectivity, leading performance and power efficiency. Together, we’re building platforms that bring NVIDIA accelerated computing to new markets and give customers the freedom to create differentiated AI systems at enormous scale.”",
+        "“MediaTek and NVIDIA share a vision for making advanced AI computing pervasive across the technology landscape,” said Rick Tsai, vice chairman and CEO of MediaTek. “NVIDIA’s investment strengthens a collaboration that spans cloud AI infrastructure, local AI computing and automotive in the era of physical AI. By combining NVIDIA’s leadership in accelerated computing and AI software ecosystem with MediaTek’s expertise in a diverse AI technology portfolio from edge to cloud, and our leadership position in custom silicon, we can accelerate innovation for our customers.”",
+        "Building Custom AI Infrastructure With NVLink Fusion Platform MediaTek will offer the NVLink Fusion platform as a design foundation for customers developing custom AI accelerators, enabling their platforms to evolve alongside future NVIDIA architectures.",
+        "The NVLink Fusion platform provides a prebuilt, prequalified and system-prevalidated foundation for multi-die XPU development — accelerating the path from silicon and advanced packaging to rack-scale systems.",
+        "The NVLink Fusion platform brings together the critical technologies surrounding a custom XPU, including:",
+        "NVIDIA NVLink Fusion chiplet, connecting XPUs to the NVIDIA NVLink scale-up fabric using NVIDIA photonics or electrical interconnects.",
+        "NVIDIA NVLink-C2C, providing high-bandwidth, energy-efficient connectivity between XPUs, NVIDIA Rosa CPUs and other compatible processors.",
+        "NVIDIA NVHBM, integrating customized memory capabilities to increase bandwidth and energy efficiency while dedicating more silicon area to compute.",
+        "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support.",
+        "Rather than engineering and qualifying every element surrounding a custom XPU from the ground up, customers can focus resources on the differentiated compute that defines their platforms while relying on NVIDIA and MediaTek for the NVLink connectivity, memory architecture, packaging, manufacturing and rack-scale technologies required for production deployment.",
+        "Customers can bring their XPU designs to MediaTek and tailor connectivity, memory, packaging, performance and power characteristics to their workloads and infrastructure requirements.",
+        "Additionally, MediaTek is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers and frontier model developers to seamlessly connect custom XPUs to NVIDIA’s AI infrastructure.",
+        "With NVLink Fusion, partners can leverage NVIDIA’s proven scale-up and scale-out technology stack and ecosystem, as well as the NVIDIA MGX™ rack-scale architecture, to reduce development complexity, increase performance and accelerate time to market for semi-custom AI factories.",
+        "Bringing Supercomputers to Local AI Computing NVIDIA and MediaTek are collaborating to advance local AI computing for the era of generative and agentic AI, combining NVIDIA’s leadership in accelerated computing with MediaTek’s expertise in high-performance, power-efficient system-on-chip design.",
+        "MediaTek collaborated with NVIDIA on the GB10 Grace Blackwell Superchip that powers NVIDIA DGX Spark, which combines an NVIDIA Blackwell GPU and Grace CPU connected by NVLink-C2C to bring powerful AI capabilities to edge systems. The companies have extended their collaboration with NVIDIA RTX Spark to power the next generation of consumer PCs redefined for the AI era.",
+        "Advancing the AI-Defined Vehicle in the Era of Physical AI Additionally, NVIDIA and MediaTek are collaborating across multiple generations to advance AI-powered, software-defined vehicles, combining MediaTek’s automotive system-on-chip design leadership with NVIDIA’s accelerated computing, AI, graphics and software.",
+        "MediaTek Dimensity Auto platforms integrate NVIDIA technologies to deliver advanced AI and NVIDIA RTX™ graphics for intelligent vehicle cockpits and can work alongside NVIDIA DRIVE AGX™. The companies continue to build on this foundation across future generations, creating a scalable architecture for increasingly intelligent, AI-defined vehicles."
+      ],
+      "passages": [
+        {
+          "id": "article_001",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 1,
+          "partial_paragraph": false,
+          "text": "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+          "title": "Official article · passage 1",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_002",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 2,
+          "partial_paragraph": false,
+          "text": "As part of the expanded collaboration, MediaTek will adopt the NVIDIA NVLink Fusion™ platform to provide hyperscalers, cloud service providers and frontier model developers with a prevalidated path to develop custom XPUs and bring them into NVIDIA NVLink™-connected, rack-scale AI factories.",
+          "title": "Official article · passage 2",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_003",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 3,
+          "partial_paragraph": false,
+          "text": "The companies combine NVIDIA’s accelerated computing, AI, graphics and software platforms with MediaTek’s leadership in custom silicon, high-performance computing, power-efficient system-on-chip (SoC) design, advanced packaging, interconnects and connectivity.",
+          "title": "Official article · passage 3",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_004",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 4,
+          "partial_paragraph": false,
+          "text": "NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.",
+          "title": "Official article · passage 4",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_005",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 5,
+          "partial_paragraph": false,
+          "text": "NVIDIA and MediaTek are collaborating in three major areas:",
+          "title": "Official article · passage 5",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_006",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 6,
+          "partial_paragraph": false,
+          "text": "AI infrastructure: MediaTek will work with NVIDIA’s NVLink Fusion ecosystem to enable customers to develop custom AI infrastructure designed to integrate with NVIDIA rack-scale systems and AI factories.",
+          "title": "Official article · passage 6",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_007",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 7,
+          "partial_paragraph": false,
+          "text": "Local AI computing: The companies will continue to collaborate on multiple generations of NVIDIA RTX Spark™ and DGX Spark™ PC chips, powering consumer PCs, AI developer supercomputers and enterprise-class workstations, that integrate NVIDIA GPUs with MediaTek SoCs.",
+          "title": "Official article · passage 7",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_008",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 8,
+          "partial_paragraph": false,
+          "text": "Automotive: MediaTek and NVIDIA will continue developing platforms for AI-powered, software-defined vehicles in the era of physical AI.",
+          "title": "Official article · passage 8",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_009",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 9,
+          "partial_paragraph": false,
+          "text": "“AI is transforming every computing platform — from the world’s largest AI factories to the PC and the car,” said Jensen Huang, founder and CEO of NVIDIA. “MediaTek is one of the world’s great semiconductor companies, with exceptional expertise in system-on-chip design, connectivity, leading performance and power efficiency. Together, we’re building platforms that bring NVIDIA accelerated computing to new markets and give customers the freedom to create differentiated AI systems at enormous scale.”",
+          "title": "Official article · passage 9",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_010",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 10,
+          "partial_paragraph": false,
+          "text": "“MediaTek and NVIDIA share a vision for making advanced AI computing pervasive across the technology landscape,” said Rick Tsai, vice chairman and CEO of MediaTek. “NVIDIA’s investment strengthens a collaboration that spans cloud AI infrastructure, local AI computing and automotive in the era of physical AI. By combining NVIDIA’s leadership in accelerated computing and AI software ecosystem with MediaTek’s expertise in a diverse AI technology portfolio from edge to cloud, and our leadership position in custom silicon, we can accelerate innovation for our customers.”",
+          "title": "Official article · passage 10",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_011",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 11,
+          "partial_paragraph": false,
+          "text": "Building Custom AI Infrastructure With NVLink Fusion Platform MediaTek will offer the NVLink Fusion platform as a design foundation for customers developing custom AI accelerators, enabling their platforms to evolve alongside future NVIDIA architectures.",
+          "title": "Official article · passage 11",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_012",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 12,
+          "partial_paragraph": false,
+          "text": "The NVLink Fusion platform provides a prebuilt, prequalified and system-prevalidated foundation for multi-die XPU development — accelerating the path from silicon and advanced packaging to rack-scale systems.",
+          "title": "Official article · passage 12",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_013",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 13,
+          "partial_paragraph": false,
+          "text": "The NVLink Fusion platform brings together the critical technologies surrounding a custom XPU, including:",
+          "title": "Official article · passage 13",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_014",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 14,
+          "partial_paragraph": false,
+          "text": "NVIDIA NVLink Fusion chiplet, connecting XPUs to the NVIDIA NVLink scale-up fabric using NVIDIA photonics or electrical interconnects.",
+          "title": "Official article · passage 14",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_015",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 15,
+          "partial_paragraph": false,
+          "text": "NVIDIA NVLink-C2C, providing high-bandwidth, energy-efficient connectivity between XPUs, NVIDIA Rosa CPUs and other compatible processors.",
+          "title": "Official article · passage 15",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_016",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 16,
+          "partial_paragraph": false,
+          "text": "NVIDIA NVHBM, integrating customized memory capabilities to increase bandwidth and energy efficiency while dedicating more silicon area to compute.",
+          "title": "Official article · passage 16",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_017",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 17,
+          "partial_paragraph": false,
+          "text": "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support.",
+          "title": "Official article · passage 17",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_018",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 18,
+          "partial_paragraph": false,
+          "text": "Rather than engineering and qualifying every element surrounding a custom XPU from the ground up, customers can focus resources on the differentiated compute that defines their platforms while relying on NVIDIA and MediaTek for the NVLink connectivity, memory architecture, packaging, manufacturing and rack-scale technologies required for production deployment.",
+          "title": "Official article · passage 18",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_019",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 19,
+          "partial_paragraph": false,
+          "text": "Customers can bring their XPU designs to MediaTek and tailor connectivity, memory, packaging, performance and power characteristics to their workloads and infrastructure requirements.",
+          "title": "Official article · passage 19",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_020",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 20,
+          "partial_paragraph": false,
+          "text": "Additionally, MediaTek is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers and frontier model developers to seamlessly connect custom XPUs to NVIDIA’s AI infrastructure.",
+          "title": "Official article · passage 20",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_021",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 21,
+          "partial_paragraph": false,
+          "text": "With NVLink Fusion, partners can leverage NVIDIA’s proven scale-up and scale-out technology stack and ecosystem, as well as the NVIDIA MGX™ rack-scale architecture, to reduce development complexity, increase performance and accelerate time to market for semi-custom AI factories.",
+          "title": "Official article · passage 21",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        },
+        {
+          "id": "article_022",
+          "kind": "observed",
+          "observed_at": 1789831417.5787048,
+          "paragraph_number": 22,
+          "partial_paragraph": true,
+          "text": "Bringing Supercomputers to Local AI Computing",
+          "title": "Official article · passage 22",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+        }
+      ],
+      "requested_url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms",
+      "retrieved_at": 1789831417.5787048,
+      "status": "retrieved",
+      "supplied_characters": 4993,
+      "supplied_passages": 22,
+      "text_sha256": "dda2e14ca8fcfcd09d6333d27e75eff4ff15cf1637d70bdcf0d0262516aeb3e6",
+      "title": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms"
+    },
+    "captured_at": 1789831422.1644318,
+    "checks": [
+      {
+        "detail": "458.9 hours old; entry limit 1 hour(s)",
+        "label": "Announcement within entry window",
+        "passed": false
+      },
+      {
+        "detail": "2.3 seconds old at capture",
+        "label": "Recent quote",
+        "passed": true
+      },
+      {
+        "detail": "Calendar closure; token weekend precedence is not yet verified",
+        "label": "Trading session",
+        "passed": false
+      },
+      {
+        "detail": "11.25 bps; limit 30 bps",
+        "label": "Spread within limit",
+        "passed": true
+      },
+      {
+        "detail": "Closed candle before publication",
+        "label": "Pre-announcement reference",
+        "passed": true
+      },
+      {
+        "detail": "Top-of-book sizes only; no proposed position was checked",
+        "label": "Displayed bid and ask size",
+        "passed": true
+      }
+    ],
+    "cost_assumptions": {
+      "fee_bps_per_side": 10.0,
+      "slippage_bps_per_side": 5.0
+    },
+    "event_age_seconds": 1652022.1644318104,
+    "evidence": [
+      {
+        "id": "issuer",
+        "kind": "observed",
+        "observed_at": 1789748168.487936,
+        "published_at": 1788179400.0,
+        "text": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms. NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "title": "Official issuer excerpt",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_001",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 1,
+        "partial_paragraph": false,
+        "text": "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "title": "Official article · passage 1",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_002",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 2,
+        "partial_paragraph": false,
+        "text": "As part of the expanded collaboration, MediaTek will adopt the NVIDIA NVLink Fusion™ platform to provide hyperscalers, cloud service providers and frontier model developers with a prevalidated path to develop custom XPUs and bring them into NVIDIA NVLink™-connected, rack-scale AI factories.",
+        "title": "Official article · passage 2",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_003",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 3,
+        "partial_paragraph": false,
+        "text": "The companies combine NVIDIA’s accelerated computing, AI, graphics and software platforms with MediaTek’s leadership in custom silicon, high-performance computing, power-efficient system-on-chip (SoC) design, advanced packaging, interconnects and connectivity.",
+        "title": "Official article · passage 3",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_004",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 4,
+        "partial_paragraph": false,
+        "text": "NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.",
+        "title": "Official article · passage 4",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_005",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 5,
+        "partial_paragraph": false,
+        "text": "NVIDIA and MediaTek are collaborating in three major areas:",
+        "title": "Official article · passage 5",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_006",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 6,
+        "partial_paragraph": false,
+        "text": "AI infrastructure: MediaTek will work with NVIDIA’s NVLink Fusion ecosystem to enable customers to develop custom AI infrastructure designed to integrate with NVIDIA rack-scale systems and AI factories.",
+        "title": "Official article · passage 6",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_007",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 7,
+        "partial_paragraph": false,
+        "text": "Local AI computing: The companies will continue to collaborate on multiple generations of NVIDIA RTX Spark™ and DGX Spark™ PC chips, powering consumer PCs, AI developer supercomputers and enterprise-class workstations, that integrate NVIDIA GPUs with MediaTek SoCs.",
+        "title": "Official article · passage 7",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_008",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 8,
+        "partial_paragraph": false,
+        "text": "Automotive: MediaTek and NVIDIA will continue developing platforms for AI-powered, software-defined vehicles in the era of physical AI.",
+        "title": "Official article · passage 8",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_009",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 9,
+        "partial_paragraph": false,
+        "text": "“AI is transforming every computing platform — from the world’s largest AI factories to the PC and the car,” said Jensen Huang, founder and CEO of NVIDIA. “MediaTek is one of the world’s great semiconductor companies, with exceptional expertise in system-on-chip design, connectivity, leading performance and power efficiency. Together, we’re building platforms that bring NVIDIA accelerated computing to new markets and give customers the freedom to create differentiated AI systems at enormous scale.”",
+        "title": "Official article · passage 9",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_010",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 10,
+        "partial_paragraph": false,
+        "text": "“MediaTek and NVIDIA share a vision for making advanced AI computing pervasive across the technology landscape,” said Rick Tsai, vice chairman and CEO of MediaTek. “NVIDIA’s investment strengthens a collaboration that spans cloud AI infrastructure, local AI computing and automotive in the era of physical AI. By combining NVIDIA’s leadership in accelerated computing and AI software ecosystem with MediaTek’s expertise in a diverse AI technology portfolio from edge to cloud, and our leadership position in custom silicon, we can accelerate innovation for our customers.”",
+        "title": "Official article · passage 10",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_011",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 11,
+        "partial_paragraph": false,
+        "text": "Building Custom AI Infrastructure With NVLink Fusion Platform MediaTek will offer the NVLink Fusion platform as a design foundation for customers developing custom AI accelerators, enabling their platforms to evolve alongside future NVIDIA architectures.",
+        "title": "Official article · passage 11",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_012",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 12,
+        "partial_paragraph": false,
+        "text": "The NVLink Fusion platform provides a prebuilt, prequalified and system-prevalidated foundation for multi-die XPU development — accelerating the path from silicon and advanced packaging to rack-scale systems.",
+        "title": "Official article · passage 12",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_013",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 13,
+        "partial_paragraph": false,
+        "text": "The NVLink Fusion platform brings together the critical technologies surrounding a custom XPU, including:",
+        "title": "Official article · passage 13",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_014",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 14,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVLink Fusion chiplet, connecting XPUs to the NVIDIA NVLink scale-up fabric using NVIDIA photonics or electrical interconnects.",
+        "title": "Official article · passage 14",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_015",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 15,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVLink-C2C, providing high-bandwidth, energy-efficient connectivity between XPUs, NVIDIA Rosa CPUs and other compatible processors.",
+        "title": "Official article · passage 15",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_016",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 16,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVHBM, integrating customized memory capabilities to increase bandwidth and energy efficiency while dedicating more silicon area to compute.",
+        "title": "Official article · passage 16",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_017",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 17,
+        "partial_paragraph": false,
+        "text": "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support.",
+        "title": "Official article · passage 17",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_018",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 18,
+        "partial_paragraph": false,
+        "text": "Rather than engineering and qualifying every element surrounding a custom XPU from the ground up, customers can focus resources on the differentiated compute that defines their platforms while relying on NVIDIA and MediaTek for the NVLink connectivity, memory architecture, packaging, manufacturing and rack-scale technologies required for production deployment.",
+        "title": "Official article · passage 18",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_019",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 19,
+        "partial_paragraph": false,
+        "text": "Customers can bring their XPU designs to MediaTek and tailor connectivity, memory, packaging, performance and power characteristics to their workloads and infrastructure requirements.",
+        "title": "Official article · passage 19",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_020",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 20,
+        "partial_paragraph": false,
+        "text": "Additionally, MediaTek is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers and frontier model developers to seamlessly connect custom XPUs to NVIDIA’s AI infrastructure.",
+        "title": "Official article · passage 20",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_021",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 21,
+        "partial_paragraph": false,
+        "text": "With NVLink Fusion, partners can leverage NVIDIA’s proven scale-up and scale-out technology stack and ecosystem, as well as the NVIDIA MGX™ rack-scale architecture, to reduce development complexity, increase performance and accelerate time to market for semi-custom AI factories.",
+        "title": "Official article · passage 21",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_022",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 22,
+        "partial_paragraph": true,
+        "text": "Bringing Supercomputers to Local AI Computing",
+        "title": "Official article · passage 22",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "quote",
+        "kind": "observed",
+        "text": "{\"ask\":222.32,\"ask_size\":2.0,\"bid\":222.07,\"bid_size\":0.6688,\"collected_at\":1789831422.164425,\"timestamp\":1789831419.885}",
+        "title": "Bitget quote snapshot",
+        "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RNVDAUSDT"
+      },
+      {
+        "id": "reference",
+        "kind": "observed",
+        "text": "{\"bar_close_at\":1788179340.0,\"bar_open_at\":1788179280.0,\"description\":\"Last retrieved fully closed 1-minute candle before publication; not proof of event causation\",\"price\":218.738}",
+        "title": "Pre-announcement candle"
+      },
+      {
+        "id": "price_change",
+        "kind": "computed",
+        "text": "Midpoint change since the pre-announcement candle: 158.04 bps. This does not establish causation or how much news is already priced in.",
+        "title": "Observed price change"
+      },
+      {
+        "id": "entry_context",
+        "kind": "computed",
+        "text": "[{\"detail\":\"458.9 hours old; entry limit 1 hour(s)\",\"label\":\"Announcement within entry window\",\"passed\":false},{\"detail\":\"2.3 seconds old at capture\",\"label\":\"Recent quote\",\"passed\":true},{\"detail\":\"Calendar closure; token weekend precedence is not yet verified\",\"label\":\"Trading session\",\"passed\":false},{\"detail\":\"11.25 bps; limit 30 bps\",\"label\":\"Spread within limit\",\"passed\":true},{\"detail\":\"Closed candle before publication\",\"label\":\"Pre-announcement reference\",\"passed\":true},{\"detail\":\"Top-of-book sizes only; no proposed position was checked\",\"label\":\"Displayed bid and ask size\",\"passed\":true}]",
+        "title": "Entry context at capture"
+      },
+      {
+        "id": "limits",
+        "kind": "limitations",
+        "text": "Official article prose was retrieved at 1789831417.5787048; 22 passages (4993 characters) are supplied to the model. Some extracted article text was omitted to fit the local model. The page may include updates made after original publication. Issuer claims are not independently verified. No analyst consensus or independent expectations data was supplied. This is a review at the time shown, not a historical trade or a forecast made at publication. The announcement is outside the paper engine's one-hour entry window. The measured price change spans publication to this review; other events may explain it.",
+        "title": "Known limitations"
+      }
+    ],
+    "limitations": [
+      "Official article prose was retrieved at 1789831417.5787048; 22 passages (4993 characters) are supplied to the model. Some extracted article text was omitted to fit the local model. The page may include updates made after original publication. Issuer claims are not independently verified.",
+      "No analyst consensus or independent expectations data was supplied.",
+      "This is a review at the time shown, not a historical trade or a forecast made at publication.",
+      "The announcement is outside the paper engine's one-hour entry window.",
+      "The measured price change spans publication to this review; other events may explain it."
+    ],
+    "price_change_bps": 158.0429554992735,
+    "quote": {
+      "ask": 222.32,
+      "ask_size": 2.0,
+      "bid": 222.07,
+      "bid_size": 0.6688,
+      "collected_at": 1789831422.164425,
+      "timestamp": 1789831419.885
+    },
+    "reference": {
+      "bar_close_at": 1788179340.0,
+      "bar_open_at": 1788179280.0,
+      "description": "Last retrieved fully closed 1-minute candle before publication; not proof of event causation",
+      "price": 218.738
+    },
+    "session": {
+      "available": true,
+      "reason": "Calendar closure; token weekend precedence is not yet verified",
+      "tradable": false
+    },
+    "spread_bps": 11.251378293840997
+  },
+  "model_input": {
+    "announcement_title": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms",
+    "assessment_at": 1789831422.164642,
+    "evidence": [
+      {
+        "id": "issuer",
+        "kind": "observed",
+        "observed_at": 1789748168.487936,
+        "published_at": 1788179400.0,
+        "text": "NVIDIA and MediaTek Deepen Long-Standing Partnership to Build AI Edge to Cloud Computing Platforms. NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "title": "Official issuer excerpt",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_001",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 1,
+        "partial_paragraph": false,
+        "text": "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "title": "Official article · passage 1",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_002",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 2,
+        "partial_paragraph": false,
+        "text": "As part of the expanded collaboration, MediaTek will adopt the NVIDIA NVLink Fusion™ platform to provide hyperscalers, cloud service providers and frontier model developers with a prevalidated path to develop custom XPUs and bring them into NVIDIA NVLink™-connected, rack-scale AI factories.",
+        "title": "Official article · passage 2",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_003",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 3,
+        "partial_paragraph": false,
+        "text": "The companies combine NVIDIA’s accelerated computing, AI, graphics and software platforms with MediaTek’s leadership in custom silicon, high-performance computing, power-efficient system-on-chip (SoC) design, advanced packaging, interconnects and connectivity.",
+        "title": "Official article · passage 3",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_004",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 4,
+        "partial_paragraph": false,
+        "text": "NVIDIA has also invested $3.5 billion in convertible bonds issued by MediaTek.",
+        "title": "Official article · passage 4",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_005",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 5,
+        "partial_paragraph": false,
+        "text": "NVIDIA and MediaTek are collaborating in three major areas:",
+        "title": "Official article · passage 5",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_006",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 6,
+        "partial_paragraph": false,
+        "text": "AI infrastructure: MediaTek will work with NVIDIA’s NVLink Fusion ecosystem to enable customers to develop custom AI infrastructure designed to integrate with NVIDIA rack-scale systems and AI factories.",
+        "title": "Official article · passage 6",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_007",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 7,
+        "partial_paragraph": false,
+        "text": "Local AI computing: The companies will continue to collaborate on multiple generations of NVIDIA RTX Spark™ and DGX Spark™ PC chips, powering consumer PCs, AI developer supercomputers and enterprise-class workstations, that integrate NVIDIA GPUs with MediaTek SoCs.",
+        "title": "Official article · passage 7",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_008",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 8,
+        "partial_paragraph": false,
+        "text": "Automotive: MediaTek and NVIDIA will continue developing platforms for AI-powered, software-defined vehicles in the era of physical AI.",
+        "title": "Official article · passage 8",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_009",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 9,
+        "partial_paragraph": false,
+        "text": "“AI is transforming every computing platform — from the world’s largest AI factories to the PC and the car,” said Jensen Huang, founder and CEO of NVIDIA. “MediaTek is one of the world’s great semiconductor companies, with exceptional expertise in system-on-chip design, connectivity, leading performance and power efficiency. Together, we’re building platforms that bring NVIDIA accelerated computing to new markets and give customers the freedom to create differentiated AI systems at enormous scale.”",
+        "title": "Official article · passage 9",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_010",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 10,
+        "partial_paragraph": false,
+        "text": "“MediaTek and NVIDIA share a vision for making advanced AI computing pervasive across the technology landscape,” said Rick Tsai, vice chairman and CEO of MediaTek. “NVIDIA’s investment strengthens a collaboration that spans cloud AI infrastructure, local AI computing and automotive in the era of physical AI. By combining NVIDIA’s leadership in accelerated computing and AI software ecosystem with MediaTek’s expertise in a diverse AI technology portfolio from edge to cloud, and our leadership position in custom silicon, we can accelerate innovation for our customers.”",
+        "title": "Official article · passage 10",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_011",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 11,
+        "partial_paragraph": false,
+        "text": "Building Custom AI Infrastructure With NVLink Fusion Platform MediaTek will offer the NVLink Fusion platform as a design foundation for customers developing custom AI accelerators, enabling their platforms to evolve alongside future NVIDIA architectures.",
+        "title": "Official article · passage 11",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_012",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 12,
+        "partial_paragraph": false,
+        "text": "The NVLink Fusion platform provides a prebuilt, prequalified and system-prevalidated foundation for multi-die XPU development — accelerating the path from silicon and advanced packaging to rack-scale systems.",
+        "title": "Official article · passage 12",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_013",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 13,
+        "partial_paragraph": false,
+        "text": "The NVLink Fusion platform brings together the critical technologies surrounding a custom XPU, including:",
+        "title": "Official article · passage 13",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_014",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 14,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVLink Fusion chiplet, connecting XPUs to the NVIDIA NVLink scale-up fabric using NVIDIA photonics or electrical interconnects.",
+        "title": "Official article · passage 14",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_015",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 15,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVLink-C2C, providing high-bandwidth, energy-efficient connectivity between XPUs, NVIDIA Rosa CPUs and other compatible processors.",
+        "title": "Official article · passage 15",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_016",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 16,
+        "partial_paragraph": false,
+        "text": "NVIDIA NVHBM, integrating customized memory capabilities to increase bandwidth and energy efficiency while dedicating more silicon area to compute.",
+        "title": "Official article · passage 16",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_017",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 17,
+        "partial_paragraph": false,
+        "text": "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support.",
+        "title": "Official article · passage 17",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_018",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 18,
+        "partial_paragraph": false,
+        "text": "Rather than engineering and qualifying every element surrounding a custom XPU from the ground up, customers can focus resources on the differentiated compute that defines their platforms while relying on NVIDIA and MediaTek for the NVLink connectivity, memory architecture, packaging, manufacturing and rack-scale technologies required for production deployment.",
+        "title": "Official article · passage 18",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_019",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 19,
+        "partial_paragraph": false,
+        "text": "Customers can bring their XPU designs to MediaTek and tailor connectivity, memory, packaging, performance and power characteristics to their workloads and infrastructure requirements.",
+        "title": "Official article · passage 19",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_020",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 20,
+        "partial_paragraph": false,
+        "text": "Additionally, MediaTek is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers and frontier model developers to seamlessly connect custom XPUs to NVIDIA’s AI infrastructure.",
+        "title": "Official article · passage 20",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_021",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 21,
+        "partial_paragraph": false,
+        "text": "With NVLink Fusion, partners can leverage NVIDIA’s proven scale-up and scale-out technology stack and ecosystem, as well as the NVIDIA MGX™ rack-scale architecture, to reduce development complexity, increase performance and accelerate time to market for semi-custom AI factories.",
+        "title": "Official article · passage 21",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "article_022",
+        "kind": "observed",
+        "observed_at": 1789831417.5787048,
+        "paragraph_number": 22,
+        "partial_paragraph": true,
+        "text": "Bringing Supercomputers to Local AI Computing",
+        "title": "Official article · passage 22",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+      },
+      {
+        "id": "quote",
+        "kind": "observed",
+        "text": "{\"ask\":222.32,\"ask_size\":2.0,\"bid\":222.07,\"bid_size\":0.6688,\"collected_at\":1789831422.164425,\"timestamp\":1789831419.885}",
+        "title": "Bitget quote snapshot",
+        "url": "https://api.bitget.com/api/v3/market/tickers?category=SPOT&symbol=RNVDAUSDT"
+      },
+      {
+        "id": "reference",
+        "kind": "observed",
+        "text": "{\"bar_close_at\":1788179340.0,\"bar_open_at\":1788179280.0,\"description\":\"Last retrieved fully closed 1-minute candle before publication; not proof of event causation\",\"price\":218.738}",
+        "title": "Pre-announcement candle"
+      },
+      {
+        "id": "price_change",
+        "kind": "computed",
+        "text": "Midpoint change since the pre-announcement candle: 158.04 bps. This does not establish causation or how much news is already priced in.",
+        "title": "Observed price change"
+      },
+      {
+        "id": "limits",
+        "kind": "limitations",
+        "text": "Official article prose was retrieved at 1789831417.5787048; 22 passages (4993 characters) are supplied to the model. Some extracted article text was omitted to fit the local model. The page may include updates made after original publication. Issuer claims are not independently verified. No analyst consensus or independent expectations data is supplied. Quotes and candles are saved observations at the stated times, not live prices. Any computed price change spans the reference candle to the saved quote; other events may explain it. Missing data cannot establish priced-in status. This is not an assessment made at publication or evidence of trading performance.",
+        "title": "Known limitations"
+      }
+    ],
+    "input_mode": "fresh_context",
+    "market_captured_at": 1789831422.1644318,
+    "mode": "research_only",
+    "published_at": 1788179400.0,
+    "symbol": "RNVDAUSDT"
+  },
+  "model_response": {
+    "business_impact": {
+      "source_ids": [
+        "article_001",
+        "article_002",
+        "article_003"
+      ],
+      "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure. This collaboration is expected to accelerate the deployment of custom XPUs (eXascale Processors) in rack-scale AI factories, enabling more efficient and powerful AI computing solutions. The partnership is likely to have a positive impact on both companies' business strategies, as it allows them to focus on differentiated compute while leveraging NVIDIA's and MediaTek's expertise in connectivity, memory,包装,"
+    },
+    "counterargument": {
+      "source_ids": [
+        "article_017"
+      ],
+      "text": "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support."
+    },
+    "event_classification": {
+      "category": "commercial_agreement",
+      "source_id": "article_001",
+      "summary": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+    },
+    "invalidation": {
+      "evidence_needed": "The article mentions that the partnership is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers, and frontier model developers to seamlessly connect custom XPUs to NVIDIA's AI infrastructure. However, the article does not provide specific details on the financial terms of the partnership, the expected revenue, or the market share that the partnership is expected to capture. Therefore, further information is needed to validate the impact of the",
+      "source_to_check": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+    },
+    "missing_information": [
+      "Specific details on the financial terms of the partnership",
+      "Expected revenue from the partnership",
+      "Market share that the partnership is expected to capture"
+    ],
+    "priced_in_assessment": {
+      "source_ids": [
+        "reference",
+        "price_change"
+      ],
+      "text": "The pre-announcement candle shows a price of 218.738, and the midpoint change since the pre-announcement candle is 158.04 bps. However, this does not establish causation or how much news is already priced in. Therefore, it is not possible to determine whether the news is already priced in."
+    },
+    "supporting_evidence": [
+      {
+        "source_ids": [
+          "article_001"
+        ],
+        "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+      },
+      {
+        "source_ids": [
+          "article_002"
+        ],
+        "text": "The partnership is expected to accelerate the deployment of custom XPUs (eXascale Processors) in rack-scale AI factories, enabling more efficient and powerful AI computing solutions."
+      }
+    ],
+    "thesis": {
+      "source_ids": [
+        "article_001"
+      ],
+      "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+    },
+    "verdict": "insufficient_evidence"
+  },
+  "assessment": {
+    "business_impact": {
+      "source_ids": [
+        "article_001",
+        "article_002",
+        "article_003"
+      ],
+      "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure. This collaboration is expected to accelerate the deployment of custom XPUs (eXascale Processors) in rack-scale AI factories, enabling more efficient and powerful AI computing solutions. The partnership is likely to have a positive impact on both companies' business strategies, as it allows them to focus on differentiated compute while leveraging NVIDIA's and MediaTek's expertise in connectivity, memory,包装,"
+    },
+    "counterargument": {
+      "source_ids": [
+        "article_017"
+      ],
+      "text": "Building a custom accelerator is only the beginning of deploying custom XPUs in rack-scale AI factories. Integrating multi-die architectures, advanced packaging, high-speed SerDes, HBM, I/O and scale-up networking into a manufacturable, production-ready system requires extensive chip-to-rack engineering, qualification and supply-chain support."
+    },
+    "event_classification": {
+      "category": "commercial_agreement",
+      "source_id": "article_001",
+      "source_quote": "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+      "source_quote_origin": "saved_evidence",
+      "summary": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+    },
+    "invalidation": {
+      "evidence_needed": "The article mentions that the partnership is part of the broader NVIDIA NVLink Fusion ecosystem, which enables hyperscalers, cloud service providers, and frontier model developers to seamlessly connect custom XPUs to NVIDIA's AI infrastructure. However, the article does not provide specific details on the financial terms of the partnership, the expected revenue, or the market share that the partnership is expected to capture. Therefore, further information is needed to validate the impact of the",
+      "source_to_check": "https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms"
+    },
+    "missing_information": [
+      "Specific details on the financial terms of the partnership",
+      "Expected revenue from the partnership",
+      "Market share that the partnership is expected to capture"
+    ],
+    "priced_in_assessment": {
+      "source_ids": [
+        "reference",
+        "price_change"
+      ],
+      "text": "The pre-announcement candle shows a price of 218.738, and the midpoint change since the pre-announcement candle is 158.04 bps. However, this does not establish causation or how much news is already priced in. Therefore, it is not possible to determine whether the news is already priced in."
+    },
+    "supporting_evidence": [
+      {
+        "source_ids": [
+          "article_001"
+        ],
+        "source_quote": "NVIDIA and MediaTek today announced a deepening of their longstanding collaboration to build the next generations of AI computing platforms — spanning AI infrastructure, local AI computing and automotive.",
+        "source_quote_origin": "saved_evidence",
+        "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+      },
+      {
+        "source_ids": [
+          "article_002"
+        ],
+        "source_quote": "As part of the expanded collaboration, MediaTek will adopt the NVIDIA NVLink Fusion™ platform to provide hyperscalers, cloud service providers and frontier model developers with a prevalidated path to develop custom XPUs and bring them into NVIDIA NVLink™-connected, rack-scale AI factories.",
+        "source_quote_origin": "saved_evidence",
+        "text": "The partnership is expected to accelerate the deployment of custom XPUs (eXascale Processors) in rack-scale AI factories, enabling more efficient and powerful AI computing solutions."
+      }
+    ],
+    "thesis": {
+      "source_ids": [
+        "article_001"
+      ],
+      "text": "NVIDIA and MediaTek have deepened their long-standing partnership to build AI edge-to-cloud computing platforms, which is a significant step in the development of advanced AI infrastructure."
+    },
+    "verdict": "insufficient_evidence"
+  },
+  "started_at": 1789831413.5037692
+}

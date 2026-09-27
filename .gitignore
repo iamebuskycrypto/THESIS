@@ -1,0 +1,34 @@
+# Local records and generated reports
+run-data/
+code-backups/
+THESIS-*-results/
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+.vercel/
+
+# Python and optional development tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+node_modules/
+
+# Editor and operating-system files
+.DS_Store
+._*
+.idea/
+.vscode/
