@@ -10,6 +10,7 @@ from pathlib import Path
 
 from runner import Application, mechanical_demo
 from run_export import export_run
+from stocks import public_stocks
 
 
 def handler(application, token, port):
@@ -47,6 +48,9 @@ def handler(application, token, port):
                     return self.send(application.snapshot())
                 if path.path == "/api/demo":
                     return self.send(mechanical_demo())
+                if path.path in {row['logo'] for row in public_stocks()}:
+                    asset = Path(__file__).parent / 'public' / path.path.lstrip('/')
+                    return self.send(asset.read_bytes(), content_type='image/svg+xml' if asset.suffix == '.svg' else 'image/png')
                 if path.path in ("/research.js", "/research.css", "/journal.js", "/journal.css"):
                     suffix = path.path.rsplit(".", 1)[1]
                     return self.send(Path(__file__).with_name(path.path[1:]).read_text(),

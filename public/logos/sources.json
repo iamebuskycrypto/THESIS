@@ -1,0 +1,132 @@
+{
+  "retrieved_on": "2026-10-09",
+  "logos": [
+    {
+      "ticker": "AAPL",
+      "file": "AAPL.png",
+      "source": "https://www.apple.com/favicon.ico",
+      "source_page": "https://www.apple.com/",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "NVDA",
+      "file": "NVDA.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/nvidia.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "MSFT",
+      "file": "MSFT.png",
+      "source": "https://news.microsoft.com/source/wp-content/uploads/2022/10/cropped-Microsoft_logo.svg_-300x300-1-128x120.png",
+      "source_page": "https://news.microsoft.com/source/",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "AMZN",
+      "file": "AMZN.png",
+      "source": "https://s2.q4cdn.com/299287126/files/favicon.ico",
+      "source_page": "https://ir.aboutamazon.com/overview/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "META",
+      "file": "META.png",
+      "source": "https://s21.q4cdn.com/399680738/files/favicon.ico",
+      "source_page": "https://investor.atmeta.com/home/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "AMD",
+      "file": "AMD.png",
+      "source": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/files/theme/images/favicons/apple-touch-icon.png",
+      "source_page": "https://ir.amd.com/",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "INTC",
+      "file": "INTC.png",
+      "source": "https://d1io3yog0oux5.cloudfront.net/_a0dbd358c0dfe27d139bef6d4198de40/intel/files/theme/images/favicons/favicon-32x32.png",
+      "source_page": "https://www.intc.com/",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "AVGO",
+      "file": "AVGO.png",
+      "source": "https://investors.broadcom.com/sites/g/files/knoqqb13036/files/favicon-32x32.png",
+      "source_page": "https://investors.broadcom.com/",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "GOOGL",
+      "file": "GOOGL.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/google.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "NFLX",
+      "file": "NFLX.png",
+      "source": "https://s22.q4cdn.com/959853165/files/favicon.ico",
+      "source_page": "https://ir.netflix.net/ir-overview/profile/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "COIN",
+      "file": "COIN.png",
+      "source": "https://s27.q4cdn.com/397450999/files/favicon.ico",
+      "source_page": "https://investor.coinbase.com/home/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "CRM",
+      "file": "CRM.png",
+      "source": "https://s205.q4cdn.com/626266368/files/favicon.png",
+      "source_page": "https://investor.salesforce.com/overview/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "QCOM",
+      "file": "QCOM.png",
+      "source": "https://s204.q4cdn.com/645488518/files/favicon-qualcomm.png",
+      "source_page": "https://investor.qualcomm.com/overview/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "PYPL",
+      "file": "PYPL.png",
+      "source": "https://s205.q4cdn.com/875401827/files/favicon.ico",
+      "source_page": "https://investor.pypl.com/home/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    },
+    {
+      "ticker": "UBER",
+      "file": "UBER.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/uber.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "NKE",
+      "file": "NKE.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/nike.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "KO",
+      "file": "KO.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/cocacola.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "V",
+      "file": "V.svg",
+      "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/visa.svg",
+      "license": "CC0-1.0; brand trademarks remain with their owners"
+    },
+    {
+      "ticker": "MA",
+      "file": "MA.png",
+      "source": "https://s25.q4cdn.com/479285134/files/favicon.ico",
+      "source_page": "https://investor.mastercard.com/overview/default.aspx",
+      "license": "Company website icon; used for identification of the issuer. Trademarks remain with their owners."
+    }
+  ]
+}

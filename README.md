@@ -1,4 +1,4 @@
-# THESIS 0.9.2 — stock research without a visitor API key
+# THESIS 0.9.3 — stock research without a visitor API key
 
 Evidence before action.
 
@@ -6,7 +6,7 @@ Evidence before action.
 [Watch the walkthrough](https://thesis-research-bay.vercel.app/THESIS-Explainer.mp4) ·
 [Evidence and limitations](https://thesis-research-bay.vercel.app/THESIS-Evidence-Review.html)
 
-THESIS brings official announcements for Apple, NVIDIA, Microsoft, Amazon, Meta, AMD, Intel and Broadcom, source-linked AI research
+THESIS brings official announcements for 19 companies, source-linked AI research
 drafts and timestamped Bitget stock-token observations into one local workspace.
 The researcher makes the final decision. A separate paper simulator uses simulated funds.
 
@@ -37,8 +37,20 @@ The existing workspace contains saved AI reviews, scripted paper-execution
 examples, the video and original evidence downloads. Saved records keep their
 original dates and values. These navigation changes do not enable fresh hosted
 AI generation or a hosted paper runner. Current source reading and public quotes
-for eight stocks remain available without a key. Video and original evidence
+for 19 stocks remain available without a key. Video and original evidence
 files stay pinned to their existing immutable deployment.
+
+## Stock catalogue and logos
+
+The reader covers 19 companies: Apple, NVIDIA, Microsoft, Amazon, Meta, AMD,
+Intel, Broadcom, Alphabet/Google, Netflix, Coinbase, Salesforce, Qualcomm,
+PayPal, Uber, Nike, Coca-Cola, Visa and Mastercard. Each has an allowlisted
+issuer feed and a verified Bitget rToken quote endpoint. The last eleven were
+checked on 9 October 2026; upstream availability can change.
+
+Company marks are bundled with the app, so visitors do not contact a third-party
+logo service. `public/logos/sources.json` records the original website/icon source
+and attribution. Logos identify companies; they do not imply endorsement.
 
 ## Hosted architecture
 
@@ -67,7 +79,7 @@ them. No model or Bitget trading key is embedded in public assets.
    On Windows, use `py launch.py`. The launcher opens http://127.0.0.1:8765.
    Keep the Terminal window open. Stop with Control+C in that window.
 3. Open **Announcement review** and click **Refresh news**.
-4. Search any of the eight companies, choose an announcement and click
+4. Search any of the 19 companies, choose an announcement and click
    **Read source**. No key or model is required. The exact source passages are
    saved and clearly marked as zero-model-call source briefs.
 5. For optional AI explanations, connect a local Ollama model under **Model

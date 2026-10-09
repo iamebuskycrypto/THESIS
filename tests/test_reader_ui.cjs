@@ -2,9 +2,15 @@
 const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 test('switching stocks discards old requests and source text is escaped',async()=>{
  const elements=new Map();const element=id=>{if(!elements.has(id))elements.set(id,{id,value:'',innerHTML:'',textContent:'',hidden:false,disabled:false,addEventListener(name,fn){this[name]=fn},scrollIntoView(){}});return elements.get(id)};
- const pending=[];const stored=new Map();const stocks=[{symbol:'RAAPLUSDT',company:'Apple',ticker:'AAPL',source_url:'https://www.apple.com/newsroom/rss-feed.rss'},{symbol:'RAMDUSDT',company:'AMD',ticker:'AMD',source_url:'https://ir.amd.com/news-events/press-releases/rss'}];
+ const pending=[];const stored=new Map();const stocks=[{symbol:'RAAPLUSDT',company:'Apple',ticker:'AAPL',logo:'/logos/AAPL.png',source_url:'https://www.apple.com/newsroom/rss-feed.rss'},{symbol:'RAMDUSDT',company:'AMD',ticker:'AMD',logo:'/logos/AMD.png',source_url:'https://ir.amd.com/news-events/press-releases/rss'}];
  const ctx=vm.createContext({document:{getElementById:element},URL,URLSearchParams,console,structuredClone,Date,setTimeout,clearTimeout,setInterval(){},matchMedia:()=>({matches:true}),localStorage:{getItem:k=>stored.get(k),setItem:(k,v)=>stored.set(k,v),removeItem:k=>stored.delete(k)},fetch:async url=>{const p=new URL(url,'http://localhost').searchParams;if(p.get('action')==='stocks')return{ok:true,json:async()=>({stocks})};return new Promise(resolve=>pending.push({action:p.get('action'),symbol:p.get('symbol'),resolve:body=>resolve({ok:true,json:async()=>body})}))}});
  vm.runInContext(fs.readFileSync('public/reader.js','utf8'),ctx);await new Promise(r=>setImmediate(r));
+ assert.match(element('stocks').innerHTML, /src="\/logos\/AAPL.png"/);
+ assert.equal(element('stock-count').textContent, '2 stocks');
+ assert.ok(!vm.runInContext("stockLogo({company:'Unsafe',logo:'https://evil.test/logo.svg'})",ctx).includes('<img'));
+ element('stock-search').value='AMD';element('stock-search').input();
+ assert.match(element('stock-results').textContent,/1 of 2/);
+ assert.ok(!element('stocks').innerHTML.includes('Apple'));
  vm.runInContext("chooseStock('RAMDUSDT')",ctx);assert.match(element('company-symbol').textContent,/AMD/);
  const q=s=>({symbol:s,midpoint:10.5,spread_bps:1,quote:{bid:10,ask:11,bid_size:1,ask_size:1,timestamp:Date.now()/1000,collected_at:Date.now()/1000}});
  for(const p of pending.filter(p=>p.symbol==='RAAPLUSDT'))p.resolve(p.action==='quote'?q(p.symbol):{events:[{id:'wrong',title:'Old Apple'}],collected_at:Date.now()/1000});
