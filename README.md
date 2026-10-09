@@ -1,20 +1,49 @@
-# THESIS 0.8.1 — runnable research workspace
+# THESIS 0.9.0 — stock research without a visitor API key
 
 Evidence before action.
 
-[Explore the recorded demo](https://thesis-research-bay.vercel.app/) ·
+[Open stock research](https://thesis-research-bay.vercel.app/) ·
 [Watch the walkthrough](https://thesis-research-bay.vercel.app/THESIS-Explainer.mp4) ·
 [Evidence and limitations](https://thesis-research-bay.vercel.app/THESIS-Evidence-Review.html)
 
-THESIS brings official Apple and NVIDIA announcements, source-linked AI research
+THESIS brings official announcements for Apple, NVIDIA, Microsoft, Amazon, Meta, AMD, Intel and Broadcom, source-linked AI research
 drafts and timestamped Bitget stock-token observations into one local workspace.
 The researcher makes the final decision. A separate paper simulator uses simulated funds.
 
-## The fastest way to explore
+## Online research — no API key needed
 
-Open the [public browser demo](https://thesis-research-bay.vercel.app/). It contains saved results, search, source
-passages, recorded AI drafts, the demo video and downloadable evidence. It does
-not call a model, refresh quotes or execute paper trades. No key is required.
+Open https://thesis-research-bay.vercel.app/ . Select a stock, search its official
+announcements, read source passages, refresh a public Bitget stock-token quote,
+and save research in your browser. No account, API key, installation, model
+download or provider credential is required for this reader.
+
+Publication dates stay visible: retrieving a feed now does not mean its articles
+were published recently. Article extraction can fail; the UI falls back to the
+feed excerpt with an explicit label. Quotes expire after fifteen seconds.
+
+**This is a source reader, not hosted AI.** It copies issuer evidence and makes
+zero model calls. It does not generate business conclusions or execute trades.
+Optional local-model AI and the existing Groq workflow remain in the local app.
+Public hosted AI would require a separately configured operator-owned model
+service; no such shared credential is currently configured.
+
+The original recorded demo remains at `/demo.html`, with saved AI reviews,
+scripted paper-execution examples, video and original evidence downloads. Those
+records have not been relabelled as fresh results. The archived demo pins its
+video and original downloads to their existing immutable Vercel deployment.
+
+## Hosted architecture
+
+`public/` contains the browser UI and original recorded demo. The stateless,
+read-only `api/research.py` Vercel Function uses `hosted_reader.py`. It accepts
+catalogue symbols and feed event IDs, never visitor URLs. Issuer host/path
+allowlists and bounded responses constrain collection. Successful sources are
+CDN cached for five minutes, quotes for ten seconds. Errors are not cached.
+
+Deploy the repository to Vercel using `vercel.json`. The hosted reader never
+starts the local paper runner, writes SQLite files, reads credentials or calls an
+AI provider. Browser saves stay on that device; clearing browser data removes
+them. No model or Bitget trading key is embedded in public assets.
 
 ## Run fresh research on your computer
 
@@ -29,20 +58,16 @@ not call a model, refresh quotes or execute paper trades. No key is required.
 
    On Windows, use `py launch.py`. The launcher opens http://127.0.0.1:8765.
    Keep the Terminal window open. Stop with Control+C in that window.
-3. Open **Announcement review → Research connection**. Enter your own Groq API
-   key and select **Use Groq for research**. No key is bundled with this project.
-   Ollama is not required for Groq research. THESIS cannot inspect account billing;
-   provider quotas and charges depend on your account.
-4. Click **Refresh news**, search for Apple or NVIDIA and select an announcement.
-5. Click **Review with AI**. Read the exact selected passages. After the displayed
-   cooldown, click **Assess evidence** for a separate business explanation.
-6. Inspect the cited text and limitations. Saved reviews keep the source brief
-   and AI assessment separately. Portfolio & journal → **Export complete run**
-   downloads the research and paper records with a hash manifest.
+3. Open **Announcement review** and click **Refresh news**.
+4. Search any of the eight companies, choose an announcement and click
+   **Read source**. No key or model is required. The exact source passages are
+   saved and clearly marked as zero-model-call source briefs.
+5. For optional AI explanations, connect a local Ollama model under **Model
+   setup** with the API key field blank. The advanced Groq connection also
+   remains available if you choose to supply your own provider credential.
+6. Inspect cited text and limitations. **Portfolio & journal → Export complete
+   run** downloads local research and paper records with a hash manifest.
 
-Research credentials stay in the running Python process. They are cleared from
-the form after entry, and are not included in saved review exports. Restarting
-requires re-entry. Public issuer passages are sent to Groq for requested research.
 
 ## Optional paper workflow
 
@@ -101,7 +126,7 @@ Node.js 18+. Running the app itself does not require Node.js.
 
 ```sh
 python3 -m unittest discover -s tests
-node --test tests/test_research_ui.cjs
+node --test tests/test_research_ui.cjs tests/test_reader_ui.cjs
 ```
 
 These checks use fixtures and test doubles. They do not verify live model quality.

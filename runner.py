@@ -14,6 +14,7 @@ from pathlib import Path
 from agent import Engine, LLM, Policy, SYSTEM_PROMPT, canonical, synthetic_decision, synthetic_packet
 from pipeline import Bitget, SOURCES, benchmark_decision, build_packet, collect_feed
 from research import ResearchReviews
+from stocks import public_stocks
 
 
 class EventStore:
@@ -312,6 +313,7 @@ class Application:
                       "model": {"configured": self.model is not None, "name": self.model.model if self.model else None},
                       "last_observed": self.last_observed, "markets": copy.deepcopy(self.markets)}
         events = self.store.events(16)
+        result['stocks'] = public_stocks()
         result["events"] = [{k: e[k] for k in ("id", "symbol", "title", "url", "published_at", "observed_at", "evidence_scope")} for e in events]
         result["research"] = self.reviews.snapshot()
         result["ledgers"] = []

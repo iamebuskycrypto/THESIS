@@ -178,12 +178,20 @@ class ReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Wait"):
             self.app.start()
 
-    def test_unknown_event_and_absent_model_do_not_create_reviews(self):
+    def test_unknown_event_rejected_but_source_reader_needs_no_model(self):
         with self.assertRaises(ValueError): self.app.reviews.start("unknown")
         self.app.model = None
-        with self.assertRaisesRegex(ValueError, "Connect a model"):
-            self.app.reviews.start("fixture-news")
-        self.assertEqual(self.app.reviews.snapshot()["records"], [])
+        with patch('research.collect_article', return_value={'status':'unavailable','reason':'Fixture'}):
+            review_id = self.app.reviews.start("fixture-news")
+            self.app.reviews.worker.join(5)
+        row = self.app.reviews.get(review_id)
+        self.assertEqual(row['status'], 'complete')
+        self.assertEqual(row['model_calls'], 0)
+        self.assertEqual(row['brief']['category_origin'], 'not_classified')
+        self.assertIsNone(row['assessment'])
+        self.assertEqual(row['brief']['passages'][0]['text'], event(self.now)['text'])
+        with self.assertRaisesRegex(ValueError, 'AI explanations need a model'):
+            self.app.reviews.assess(review_id)
 
     def test_interrupted_work_does_not_appear_successful_after_restart(self):
         row = {"id": "a" * 32, "started_at": self.now, "status": "running"}

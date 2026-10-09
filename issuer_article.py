@@ -8,6 +8,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
+from stocks import STOCKS
 
 MAX_BYTES = 2_000_000
 MAX_TEXT = 80_000
@@ -27,9 +28,8 @@ def approved_url(url, symbol):
         if (p.scheme != 'https' or p.port not in (None, 443) or p.username or p.password
                 or p.query or p.fragment or '\\' in url or any(ord(c) < 32 for c in url)):
             return False
-        if symbol == 'RAAPLUSDT':
-            return p.hostname in ('www.apple.com','apple.com') and bool(re.fullmatch(r'/newsroom/\d{4}/\d{2}/[\w-]+/?', p.path))
-        return symbol == 'RNVDAUSDT' and p.hostname == 'nvidianews.nvidia.com' and bool(re.fullmatch(r'/news/[\w-]+/?', p.path))
+        source = STOCKS.get(symbol)
+        return bool(source and p.hostname in source['hosts'] and re.fullmatch(source['article_path'], p.path))
     except (TypeError, ValueError):
         return False
 
@@ -100,9 +100,11 @@ def extract_article(raw, event):
     parser.feed(raw.decode('utf-8-sig', errors='replace'))
     nodes = list(parser.root.walk())
     titles = [normalized(n.text()) for n in nodes if n.tag == 'h1']
-    title = next((t for t in titles if t), '')
     words = lambda s: set(re.findall(r'\w+', s.casefold()))
-    expected = words(event['title']); actual = words(title)
+    expected = words(event['title'])
+    # IR pages can have a section heading before the actual article headline.
+    title = max(titles, key=lambda t: len(expected & words(t)), default='')
+    actual = words(title)
     if len(expected & actual) < min(4, len(expected)) or len(expected & actual) / max(1, len(expected)) < .7:
         raise ValueError('Article title did not match the collected announcement')
     canonicals = [n.attrs.get('href','') for n in nodes if n.tag == 'link' and 'canonical' in n.attrs.get('rel','').split()]
@@ -115,12 +117,21 @@ def extract_article(raw, event):
             for n in root.walk():
                 if n.tag in ('p','li','h2','h3') and not any(c.tag in ('p','li') for c in n.walk() if c is not n):
                     candidates.append(normalized(n.text()))
-    else:
+    elif event['symbol'] == 'RAAPLUSDT':
         # Apple newsroom article prose; exclude captions, related news and navigation.
         candidates = [normalized(n.text()) for n in nodes if n.has_class('pagebody-copy')]
         if not candidates:
             for root in (n for n in nodes if n.has_class('pagebody')):
                 candidates.extend(normalized(n.text()) for n in root.walk() if n.tag == 'p')
+    else:
+        # Restrict extraction to issuer article containers, never the whole page.
+        roots = [n for n in nodes if n.has_class('news-details') or n.has_class('news-details-content')
+                 or n.has_class('content-body') or n.has_class('entry-content')
+                 or n.attrs.get('itemprop') == 'articleBody']
+        if not roots:
+            roots = [n for n in nodes if n.tag == 'article']
+        candidates = [normalized(n.text()) for root in roots[:1] for n in root.walk()
+                      if n.tag == 'p']
     paragraphs = []
     for value in candidates:
         if value and value not in paragraphs:

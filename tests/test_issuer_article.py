@@ -58,6 +58,12 @@ class ArticleTests(unittest.TestCase):
         for bad in (HTML.replace(URL.encode(),b'https://nvidianews.nvidia.com/news/wrong'),HTML.replace(TITLE.encode(),b'Unrelated news item'),HTML.replace(b'article-body',b'unknown-layout')):
             with self.assertRaises(ValueError):extract_article(bad,event())
 
+    def test_section_heading_before_article_title_is_not_used(self):
+        raw=b'<h1>Press Releases</h1>'+HTML
+        result=extract_article(raw,event())
+        self.assertEqual(result['title'],TITLE)
+        self.assertEqual(result['paragraphs'],[P1,P2])
+
     def test_apple_entities_and_inline_tags_exclude_related_news(self):
         e=event();e.update(symbol='RAAPLUSDT',url='https://www.apple.com/newsroom/2026/09/fictional-fixture/')
         raw=f'<h1>{TITLE}</h1><div class="pagebody-copy">{P1} <b>Revenue</b> &amp; costs.</div><div class="pagebody-copy">{P2}</div><aside>Related news</aside>'.encode()

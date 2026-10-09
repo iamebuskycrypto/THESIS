@@ -1,0 +1,61 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
+  "functions": {
+    "api/research.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{public/**,tests/**,evidence/**}"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/THESIS-App-0.8.1.zip",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/THESIS-App-0.8.1.zip",
+      "permanent": false
+    },
+    {
+      "source": "/THESIS-Quick-Start.html",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/THESIS-Quick-Start.html",
+      "permanent": false
+    },
+    {
+      "source": "/THESIS-Evidence-Review.html",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/THESIS-Evidence-Review.html",
+      "permanent": false
+    },
+    {
+      "source": "/THESIS-Explainer.mp4",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/THESIS-Explainer.mp4",
+      "permanent": false
+    },
+    {
+      "source": "/THESIS-run-evidence.zip",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/THESIS-run-evidence.zip",
+      "permanent": false
+    },
+    {
+      "source": "/captions.vtt",
+      "destination": "https://thesis-research-jrb93142p-ebuskys-projects.vercel.app/captions.vtt",
+      "permanent": false
+    }
+  ]
+}

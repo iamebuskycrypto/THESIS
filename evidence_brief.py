@@ -67,3 +67,15 @@ def build_brief(packet, selection, event_types):
             'priced_in_status': 'not_determined', 'pricing_explanation': PRICING_LIMIT,
             'follow_up': 'Check the original issuer source for updates to these statements. Keep each stated condition attached to its own outcome; a plan or agreement is not evidence of completion.',
             'scope': 'AI selects the category and highlights. Source statements are copied exactly; issuer truth and highlight quality are not independently verified. No AI business-impact forecast or trading verdict is produced.'}
+
+
+def source_brief(packet, event_types):
+    """No model call or inferred category: copy the eligible source inventory."""
+    rows = selection_input(packet, event_types)['evidence']
+    brief = build_brief(packet, {'category': 'unclear', 'primary_source_id': rows[0]['id'],
+                                'supporting_source_ids': []}, event_types)
+    brief.update(version='source-reader-090', category_origin='not_classified',
+                 highlight_ids=[], scope='Source reader. No AI call or business assessment was made.')
+    for row in brief['passages']:
+        row['highlighted_by_model'] = False
+    return brief

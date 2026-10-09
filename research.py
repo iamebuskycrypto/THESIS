@@ -28,6 +28,7 @@ from evidence_brief import BRIEF_VERSION, BRIEF_PROMPT, build_brief
 import research_reasoning
 import research_grounding
 from research_groq import GroqResearch
+from evidence_brief import source_brief
 
 REVIEWER_VERSION = BRIEF_VERSION
 EVENT_TYPES = ("earnings_or_guidance", "product_or_service", "commercial_agreement",
@@ -461,9 +462,9 @@ class ResearchReviews:
         with self.connect() as db:
             records = [self._display_record(json.loads(row[0])) for row in
                        db.execute("SELECT body FROM reviews ORDER BY started DESC LIMIT 12")]
-        events = self.application.store.events(80)
+        events = self.application.store.events(320)
         return {"active": active, "records": records,
-                "connection": self.groq.snapshot() if self.groq else {"provider": "existing", "configured": self.application.model is not None, "cooldown_seconds": 0},
+                "connection": self.groq.snapshot() if self.groq else {"provider": "existing" if self.application.model else "source", "configured": True, "ai_available": self.application.model is not None, "cooldown_seconds": 0},
                 "events": [{key: e[key] for key in ("id", "symbol", "title", "published_at", "observed_at", "url")}
                            for e in events]}
 
@@ -496,17 +497,17 @@ class ResearchReviews:
             if app.worker and app.worker.is_alive() and not app.stop_event.is_set():
                 raise ValueError("Pause the paper run before starting a review, so model generation does not delay position monitoring.")
             model = self.groq or app.model
-            if model is None:
-                raise ValueError("Connect a model before reviewing an announcement")
-            model = review_client(model)
+            if model is None and assessment:
+                raise ValueError("AI explanations need a model. Read sources without a key, or use local Ollama for key-free AI.")
+            model = review_client(model) if model else None
             if hasattr(model, "require_ready"):
                 model.require_ready()
             started = time.time()
             record = {"id": uuid.uuid4().hex, "mode": "research_only", "status": "running",
                       "schema_version": 7, "reviewer_version": REVIEWER_VERSION,
                       "input_mode": "saved_context" if source else "fresh_context",
-                      "started_at": started, "event": copy.deepcopy(event), "model": model.model,
-                      "request_settings": copy.deepcopy(model.request_settings),
+                      "started_at": started, "event": copy.deepcopy(event), "model": model.model if model else "Source reader (no AI)",
+                      "request_settings": copy.deepcopy(model.request_settings) if model else {"model_calls": 0},
                       "prompt_sha256": hashlib.sha256(BRIEF_PROMPT.encode()).hexdigest(),
                       "prompt": BRIEF_PROMPT, "assessment": None, "brief": None, "context": None, "error": None}
             if source:
@@ -561,6 +562,14 @@ class ResearchReviews:
             record["model_input"] = packet
             record["model_input_sha256"] = hashlib.sha256(canonical(packet).encode()).hexdigest()
             record["review_steps"] = []
+            if model is None:
+                record.update(workflow='source_reader', reviewer_version='source-reader-090', prompt=None, prompt_sha256=None)
+                record['brief'] = source_brief(packet, EVENT_TYPES)
+                record['quality_checks'] = {'status': 'exact_copy_checked', 'scope': record['brief']['scope']}
+                record['status'] = 'complete'
+                record['model_seconds'] = 0
+                record['model_calls'] = 0
+                return
             record["model_started_at"] = time.time()
 
             def call_step(name, prompt, inputs, schema, validator):

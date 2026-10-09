@@ -17,10 +17,7 @@ from zoneinfo import ZoneInfo
 
 from agent import canonical
 
-SOURCES = {
-    "RAAPLUSDT": {"company": "Apple", "feed": "https://www.apple.com/newsroom/rss-feed.rss", "hosts": ["www.apple.com", "apple.com"]},
-    "RNVDAUSDT": {"company": "NVIDIA", "feed": "https://nvidianews.nvidia.com/cats/press_release.xml", "hosts": ["nvidianews.nvidia.com", "nvidia.com", "www.nvidia.com"]},
-}
+from stocks import STOCKS as SOURCES
 
 
 class TextOnly(HTMLParser):
