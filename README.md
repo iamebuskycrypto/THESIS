@@ -1,4 +1,4 @@
-# THESIS 0.9.1 — stock research without a visitor API key
+# THESIS 0.9.2 — stock research without a visitor API key
 
 Evidence before action.
 
@@ -27,11 +27,18 @@ Optional local-model AI and the existing Groq workflow remain in the local app.
 Public hosted AI would require a separately configured operator-owned model
 service; no such shared credential is currently configured.
 
-The original recorded demo remains at `/demo.html`. Archive links open a separate
-tab, and the archive includes a return link to current research. It contains saved AI reviews,
-scripted paper-execution examples, video and original evidence downloads. Those
-records have not been relabelled as fresh results. The archived demo pins its
-video and original downloads to their existing immutable Vercel deployment.
+The full sidebar keeps Overview, Live inputs, Announcement review, saved AI
+reviews, Portfolio & journal, Demo lab, Model setup, the video walkthrough and
+browser-saved research directly accessible. `demo.html#research`, `#journal`,
+`#demo`, `#setup` and `#walkthrough` open the corresponding existing feature;
+Back and Forward retain the selected section.
+
+The existing workspace contains saved AI reviews, scripted paper-execution
+examples, the video and original evidence downloads. Saved records keep their
+original dates and values. These navigation changes do not enable fresh hosted
+AI generation or a hosted paper runner. Current source reading and public quotes
+for eight stocks remain available without a key. Video and original evidence
+files stay pinned to their existing immutable deployment.
 
 ## Hosted architecture
 
@@ -150,5 +157,6 @@ other included notes; this README is the current setup guide.
 
 The app creates `run-data/` locally when started. That folder is excluded from
 Git. Share a deliberately reviewed export when publishing research evidence.
-The Vercel site is a recorded demonstration; this repository runs fresh research
-locally with your own model connection.
+The Vercel site combines current public-source research with the original saved
+AI and paper workspace. This repository also runs fresh research locally, with
+an optional model connection.
