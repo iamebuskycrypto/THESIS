@@ -1,4 +1,4 @@
-# THESIS 0.9.0 — stock research without a visitor API key
+# THESIS 0.9.1 — stock research without a visitor API key
 
 Evidence before action.
 
@@ -27,7 +27,8 @@ Optional local-model AI and the existing Groq workflow remain in the local app.
 Public hosted AI would require a separately configured operator-owned model
 service; no such shared credential is currently configured.
 
-The original recorded demo remains at `/demo.html`, with saved AI reviews,
+The original recorded demo remains at `/demo.html`. Archive links open a separate
+tab, and the archive includes a return link to current research. It contains saved AI reviews,
 scripted paper-execution examples, video and original evidence downloads. Those
 records have not been relabelled as fresh results. The archived demo pins its
 video and original downloads to their existing immutable Vercel deployment.
